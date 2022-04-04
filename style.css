@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Nunito:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+nav {
+  /* width: 100vw; */
+  display: flex;
+  background-color: #272643;
+  padding: 20px 0;
+  justify-content: space-around;
+
+}
+
+.logo {
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+.anchor-tag {
+  text-decoration: none;
+  color: #bae8e8;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.navbar_ul {
+  display: flex;
+  padding: 10px 0;
+  /* width: 100%; */
+}
+
+.navbar_ul li {
+  list-style: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+.navbar_ul li:hover{
+ background-color: #bae8e8;
+ color: #272643;
+ border-radius: 10px;
+}
+
+/* -------main-------------------------- */
+
+.main-content {
+  height: 90vh;
+  /* width: 100%; */
+  background-color: #e3f6f5;
+  display: flex;
+  padding: 15px 20px 30px 20px;
+}
+
+.content {
+  height: 85%;
+  width: 60%;
+  /* border: 2px solid black; */
+  color: #272643;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.InContent{
+  line-height: 1.4;
+  width: 50%;
+}
+.InContent p{
+  font-size: 1.4rem;
+  font-family: "Nunito", sans-serif;
+
+}
+.main-heading{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+}
+.second-heading{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.4rem;
+}
+
+.main-image {
+  height: 65%;
+  width: 40%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #bae8e8;
+  animation: anime 3s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.5s;
+  align-self: center;
+}
+
+.main_img{
+  transform: rotateZ(50deg) ;
+  transition: 0.5s ease-out;
+  width: 109%;
+  
+}
+.main_img:hover{
+  transform: rotateZ(-20deg) ;
+  transition: 0.5s ease-out;
+}
+.main-image:hover {
+  box-shadow: 0 0 100px #2c698d;
+}
+@keyframes anime {
+  0%,
+  100% {
+    border-radius: 100% 36% 27% 73% / 55% 58% 42% 45%;
+  }
+
+  25% {
+    border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+  }
+  50% {
+    border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+  }
+  75% {
+    border-radius: 40% 60% 70% 30% / 47% 62% 38% 57%;
+  }
+}
+
+  .main_img {
+    position: absolute;
+    left: -46px;
+    top: 71px;
+    /* width: 60%; */
+    
+}
+
+/*********************** footer******************* */
+
+.footer {
+  /* width: 100vw; */
+  background-color: #272643;
+  color: #bae8e8;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer_ul {
+  display: flex;
+  /* padding: 10px 0; */
+  justify-content: space-evenly;
+  /* width: 100vw; */
+}
+
+.footer_ul li {
+  list-style: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+}
+
+/* icons */
+.fa-brands {
+  text-align: center;
+}
+
+.footer_para {
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+}
