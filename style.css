@@ -351,6 +351,11 @@ tr:nth-child(even) {
   outline: none;
   font-size: 1.1rem;
   margin: 20px;
+  cursor: pointer;
+  transition: ease-in-out;
+}
+.form-btn:hover{
+   box-shadow: 0 0 10px 2px #99e2e2;
 }
 
 /* ***************************Gallery**************** */
